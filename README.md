@@ -20,14 +20,16 @@ directory of this repository with the source sentences from the original Lang-8
 corpus which has to be downloaded separately. Specifically, you need to complete
 the following steps:
 
-1.  Fill
+1.  [Install](https://git-lfs.github.com/) Git Large File Storage (if not
+    already installed) and clone this repository.
+2.  Fill
     [this form](https://docs.google.com/forms/d/17gZZsC_rnaACMXmPiab3kjqBEtRHPMz0UG9Dk-x_F0k/viewform?edit_requested=true),
     after which you will receive an email with a link to “the raw format
     containing all the data up to 2010”.
-2.  Follow the link to download a zip file and extract it.
-3.  Update the `LANG8_DIR` variable in `run.sh` to point to the resulting
+3.  Follow the link to download a zip file and extract it.
+4.  Update the `LANG8_DIR` variable in `run.sh` to point to the resulting
     extracted directory.
-4.  Run command `sh run.sh` which will install the required Python 3
+5.  Run command `sh run.sh` which will install the required Python 3
     dependencies in a virtualenv and align the source and the target sentences.
 
 NB: Running the above script takes about 1 hour when spaCy tokenization is
