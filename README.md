@@ -37,12 +37,13 @@ the next section) and BEA eval sets).
 
 ## Tokenization Post-Processing for CoNLL-14
 
-After training a model and computing predictions for the CoNLL-14 test set, we
-ran some post-processing steps found in `retokenize.py` to fix tokenization
-discrepancies. This improves the F0.5 scores by about 2.5 points (for T5 xxl).
+After training a model and computing predictions on the CoNLL-14 test set for
+the paper, we ran some post-processing steps found in `retokenize.py` to fix
+tokenization discrepancies. This improves the F0.5 scores by about 2.5 points
+(for T5 xxl).
 
 You may instead want to try applying the post-processing steps to cLang-8
-targets.
+targets before training a model.
 
 ## Data Format
 
