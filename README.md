@@ -32,8 +32,17 @@ the following steps:
     dependencies in a virtualenv and align the source and the target sentences.
 
 NB: Running the above script takes about 1 hour when spaCy tokenization is
-enabled (recommended to make tokenization consistent with ConLL-14 and BEA eval
-sets).
+enabled (recommended to make tokenization consistent with CoNLL-14 (see also 
+the next section) and BEA eval sets).
+
+## Tokenization Post-Processing for CoNLL-14
+
+After training a model and computing predictions for the CoNLL-14 test set, we
+ran some post-processing steps found in `retokenize.py` to fix tokenization
+discrepancies. This improves the F0.5 scores by about 2.5 points (for T5 xxl).
+
+You may instead want to try applying the post-processing steps to cLang-8
+targets.
 
 ## Data Format
 
